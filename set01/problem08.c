@@ -53,9 +53,12 @@ int sum_n_array(int n, int a[n])
 
 void output(int n, int a[n],int sum)
 {
+  int i;
+  printf("Entered array elements are\n");
+  for(i=0; i<n; i++)
+    printf("%d \n",a[i]);
   printf("Sum = %d\n", sum);
 }
-*/
 
 int main(void)
 {
