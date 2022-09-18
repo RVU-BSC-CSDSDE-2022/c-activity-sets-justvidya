@@ -1,5 +1,5 @@
 #include <stdio.h>
-int input()
+int input() /*function without any parameter*/
 {
   int a;
   printf("Enter a numbers\n");
@@ -7,6 +7,7 @@ int input()
   return a;
 }
 
+/* Call by value, there are parameters (int a)*/
 int compare(int a, int b, int c)
 {
   if (b>a)
@@ -19,10 +20,10 @@ int compare(int a, int b, int c)
 int main()
 {
   int x,y,z,largest;
-  x= input();
+  x= input(); /*simple function call*/
   y= input();
   z= input();
-  largest= compare(x,y,z);
+  largest = compare(x,y,z); /*call by vallue*/
   printf("Largest of %d, %d and %d is %d\n",x,y,z,largest);
   return 0;
 }
