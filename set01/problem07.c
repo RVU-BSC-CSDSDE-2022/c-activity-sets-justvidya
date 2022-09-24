@@ -10,5 +10,4 @@ int main(void)
 
   printf("Sum of natural numbers upto %d is %d\n",n,sum);
   return 0;
-
 }

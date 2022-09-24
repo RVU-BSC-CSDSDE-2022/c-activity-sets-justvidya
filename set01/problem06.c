@@ -26,6 +26,6 @@ int main()
   /* m is required to recieve(return a) from compare function */
 
   /*Actual parameters j,k,l*/
-  printf("Largest number is %d",m);
+  printf("Largest number is %d\n",m);
   return 0;
 }
