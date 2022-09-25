@@ -1,5 +1,6 @@
 
-/*
+/*Write a C program to find sum of n different numbers entered by the user.
+
  WITHOUT USING ARRAYS
 
 

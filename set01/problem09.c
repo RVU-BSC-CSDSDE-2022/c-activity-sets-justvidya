@@ -1,3 +1,4 @@
+//Write a C program to find the square root of a number.
 #include <stdio.h>
 float n,x;
 float s,d;

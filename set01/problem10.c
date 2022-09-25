@@ -1,37 +1,44 @@
+//Write a C program to compare two strings, character by character.
 #include<string.h>
-#include<stdlib.h>
 #include<stdio.h>
 
-void com2str(char str1[100], char str2[100]); 
-void concat2str(char str1[100], char str2[100]); 
-void length(char str[100]);
-int main()
+
+void input_two_strings(char *string1, char *string2)
 {
-int ch;
-char s1[100], s2[100];
- printf("Enter a first string :");
-scanf("%s",s1);
+  printf("Enter a first string :");
+scanf("%s",string1);
 printf("Enter a second string :");
-scanf("%s",s2);
-printf("\nResults of two strings compare :"); 
-com2str(s1,s2);
+scanf("%s",string2);
 }
-void com2str(char str1[100], char str2[100])
+
+int stringcompare(char *string1, char *string2)
 {
-  /* USING BUILT IN FUNCTIONS 
-if (strcmp(str1,str2)==0)
-printf("Both the strings are equal ....\n");
-else
-printf("Both the strings are not equal ....\n");
-*/
-  int x2 = strlen(str1);
+  int x2 = strlen(string1);
   for(int i=0; i<x2; i++)
     {
-      if(str1[i]!= str2[i])
+      if(string1[i] > string2[i])
       {
-        printf("%s is not equal to %s\n",str1,str2);
-        exit(0);
+        return 1;
       }
     }
-   printf("%s is equal to %s\n",str1,str2);
+  return 0;
+}
+
+
+void output(char *string1, char *string2, int result)
+{
+  if(result=1)
+  printf("%s is greater than %s\n",string1,string2);
+  else
+    printf("%s is greater than %s\n",string2,string1);
+}
+
+int main()
+{
+int ch, flag;
+char s1[100], s2[100];
+input_two_strings(&s1, &s2);
+flag = stringcompare(&s1, &s2);
+output(&s1, &s2,flag);
+return 0;
 }
