@@ -21,7 +21,7 @@ Complex input_complex()
 Complex add_complex(Complex a, Complex b)
 {
   Complex temp1;
-   temp1.real =a .real + b.real;
+   temp1.real =a.real + b.real;
     temp1.imag = a.imag + b.imag;
     return (temp1);
 }

@@ -6,7 +6,7 @@
 void input_two_strings(char *string1, char *string2)
 {
   printf("Enter a first string :");
-scanf("%s",string1);
+scanf("%s",string1); // No need & for strings
 printf("Enter a second string :");
 scanf("%s",string2);
 }
