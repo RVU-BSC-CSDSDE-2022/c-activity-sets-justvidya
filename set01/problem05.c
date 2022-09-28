@@ -1,8 +1,9 @@
+//Write a C program to compare three numbers using pass by value
 #include <stdio.h>
 int input() /*function without any parameter*/
 {
   int a;
-  printf("Enter a numbers\n");
+  printf("Enter a number\n");
   scanf("%d",&a);
   return a;
 }
