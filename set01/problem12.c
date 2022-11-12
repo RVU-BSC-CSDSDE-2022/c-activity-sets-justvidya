@@ -4,7 +4,9 @@ struct _complex
 	float real,imaginary;
 };
 typedef struct _complex Complex;
-int size,n; 
+
+int size, n; 
+
 int get_n()
 {
   //int n;
@@ -64,5 +66,4 @@ int main(void)
   input_n_complex(size, c);
   result = add_n_complex(size, c);
   output( size,  c, result);
-}
-
+  }
