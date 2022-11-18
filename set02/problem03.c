@@ -4,18 +4,18 @@
 
 struct camel
 {
-float rad,hei,len,wei;
+float rad, hei,len,wei;
 };
 typedef struct camel Camel;
 
 Camel input()
 {
-  Camel c;
+  Camle c;
   printf("Enter the radius\n");
   scanf("%f",&c.rad);
-  printf("Enter the height");
-  scanf("%f",&c.hei);
-  printf("Enter the lenght\n");
+  printf("Enter the height\n");
+  scanf("%f",c.hei);
+  printf("Enter the length\n");
   scanf("%f",&c.len);
   return c;
 }
@@ -30,13 +30,14 @@ void find_weight(Camel *c)
 }
 
 void output(Camel c)
-{ 
-  printf("The weight of camel is %f\n",c.wei);
+{
+  printf("The weight of the camel is %f\n",c.wei);
 }
+
 int main()
-  {
-   Camel z;
-  z= input();
+{
+  Camel z;
+  z=input();
   find_weight(&z);
-    output(z);
-  }
+  output(z);
+}
