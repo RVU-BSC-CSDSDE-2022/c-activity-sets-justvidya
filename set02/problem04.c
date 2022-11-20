@@ -1,5 +1,5 @@
+//Write a program to find out the mood of a Camel.
 #include <stdio.h>
-
 void input_camel_details(float *rad, float *hei,float *len)
 {
     printf("Enter the radius\n");
@@ -31,7 +31,7 @@ void output(float rad,float hei, float len, int mood)
     if(mood==-1)
     printf("Camel is sick");
     else if(mood==0)
-    printf("camel is happy");
+    printf("Camel is happy");
     else if(mood==1)
     printf("Camel is tense");
 }
