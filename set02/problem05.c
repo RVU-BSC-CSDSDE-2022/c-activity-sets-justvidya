@@ -1,19 +1,45 @@
 //Write a program to find borga(x) given x.
-#include<stdio.h>
-
-int input(int x)
+#include <stdio.h1>
+#include <math.h>
+int input()
 {
-    printf("Enter x value\n");
-    scanf("%d",&x);
-    return x;
+  int x;
+  printf("Enter x\n");
+  scanf("%d");
+  return x;
 }
 
-float borga_X(int x)
+float borga_x(int x)
 {
-    int i,a;
-    for(a)
+  float sum,temp,p;
+  int j,i,fact;
+  sum=0;
+  fact=1,term=1;
+  for(i=1;term>0.000001;i++)
+    {
+      fact=fact*i;
+       if(i%2!=0)
+        {
+            j=(i-1)/2;
+            p=pow(x,j);
+            term=p/fact;
+            sum=sum+term;
+        }
+    }
+    return sum;
 }
-void output(int x, float result)
+
+void output(int x,float sum)
 {
-    printf
+    printf("borga(%d) = %f\n",x,sum);
+}
+
+int main()
+{
+    float y;
+    int x;
+    x=input();
+    y=borga_X(x);
+    output(x,y);
+    return 0;
 }
