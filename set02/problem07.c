@@ -5,14 +5,15 @@
 void input(char *name)
 {
 printf("Enter Camel's name:\n");
-scanf("%s",name);
+//scanf("%s",name);
+gets(name);
 }
 
 int has_nice_name(char *name)
 { 
   int n,i,count1,count2,flag;
   n=strlen(name);
-  for(i=0;i<n;i++)
+  for(i=0;i<n;i++)// for(i=0;c[i]!='0';i++)
     { 
       if(name[i]=='a'|| name[i]=='e'||name[i]=='i' ||name[i]=='o'||           name[i]=='u'||name[i]=='A'|| name[i]=='E'||name[i]=='I'               ||name[i]=='O'|| name[i]=='U')
           {count1++;}
@@ -29,9 +30,9 @@ int has_nice_name(char *name)
 void output(int flag)
 {
   if(flag==1)
-    printf("Camel has a nice name.");
+    printf("Camel has a nice name.\n");
   else if(flag==0)
-    printf("Camel does not have a nice name.");
+    printf("Camel does not have a nice name.\n");
 }
 
 int main()
