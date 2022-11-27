@@ -17,6 +17,7 @@
         pkgs.gcc
         pkgs.gcc
         pkgs.gcc
+        pkgs.gcc
         pkgs.gnat
         pkgs.binutils
         pkgs.libgccjit
