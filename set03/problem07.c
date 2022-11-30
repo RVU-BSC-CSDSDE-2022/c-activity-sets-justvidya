@@ -18,7 +18,7 @@ Triangle input_triangle()
 
 void find_area(Traingle *t)
 {
-  t.area= 1/2*t.altitude*t.height;
+  t.area=(t.base*t.height)/2;
 }
 
 void output(Triangle t)
@@ -30,6 +30,7 @@ int main(void)
 {
   Triangle t;
   t=input_triangle();
-  
+  find_area(&t1);
+  output(&t1);
 
 } 
