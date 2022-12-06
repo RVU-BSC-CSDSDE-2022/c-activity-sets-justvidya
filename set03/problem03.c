@@ -1,3 +1,5 @@
+//Write a program find whether a number is a composite number
+//s3 p3
 #include <studio.h>
 int input_number();
 int is_composite(int n);

@@ -1,4 +1,5 @@
 //Write a C program to compare two strings, character by character.
+//s1 p10
 #include<string.h>
 #include<stdio.h>
 

@@ -1,3 +1,5 @@
+//Write a program to find if a triangle is scalene.
+//s3 p2
 #include <stdio.h>
 int input_side()
 {
