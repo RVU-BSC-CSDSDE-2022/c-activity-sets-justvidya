@@ -42,11 +42,3 @@ int main(void)
   str_reverse(a,rev);
   output(a,rev);
 }
-
-
-
-
-
-
-[9:23 am, 30/11/2022] Aishu:
-[9:23 am, 30/11/2022] Aishu: 

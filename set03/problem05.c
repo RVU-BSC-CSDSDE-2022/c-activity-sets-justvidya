@@ -1,4 +1,5 @@
 //Write a program to find GCD (HCF) of two numbers
+//s3 p5
 #include <stdio.h>
 int input()
 {
